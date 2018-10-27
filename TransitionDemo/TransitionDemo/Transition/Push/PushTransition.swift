@@ -115,6 +115,12 @@ extension PushTransition {
         }
     }
     
+    /// 从上到下的push
+    ///
+    /// - Parameters:
+    ///   - fromView: 发起push操作的VC的View
+    ///   - toView: 即将被push出来的VC的view
+    ///   - transitionContext: 上下文
     private func fromTop(fromView: UIView,
                          toView: UIView,
                          transitionContext: UIViewControllerContextTransitioning)
@@ -132,6 +138,12 @@ extension PushTransition {
         }
     }
     
+    /// 从下往上的push
+    ///
+    /// - Parameters:
+    ///   - fromView: 发起push操作的VC的View
+    ///   - toView: 即将被push出来的VC的view
+    ///   - transitionContext: 上下文
     private func fromBottom(fromView: UIView,
                             toView: UIView,
                             transitionContext:  UIViewControllerContextTransitioning)

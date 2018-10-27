@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -97,6 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="658" y="28"/>
         </scene>
         <!--Push Scale View Controller-->
         <scene sceneID="6Vx-ps-UaW">
@@ -124,6 +126,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecD-rL-p6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1381.5999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Present Scale View Controller-->
+        <scene sceneID="sBG-5d-BrU">
+            <objects>
+                <viewController storyboardIdentifier="PresentScaleViewController" id="olc-wJ-JdE" customClass="PresentScaleViewController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m76-RT-pue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="present进来的，缩放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-6a-408">
+                                <rect key="frame" x="106" y="120" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85505015890000002" blue="0.89955118010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qq1-6a-408" firstAttribute="centerX" secondItem="c8Z-XO-QuA" secondAttribute="centerX" id="6rV-sf-kF5"/>
+                            <constraint firstItem="qq1-6a-408" firstAttribute="top" secondItem="c8Z-XO-QuA" secondAttribute="top" constant="100" id="iib-KH-OHK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c8Z-XO-QuA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDK-BJ-hcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382" y="761"/>
         </scene>
         <!--Push From Top View Controller-->
         <scene sceneID="AJ0-sA-hh8">
@@ -472,7 +501,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUt-9S-E96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="694.90254872563719"/>
+            <point key="canvasLocation" x="2065" y="-663"/>
         </scene>
         <!--Push From Botom View Controller-->
         <scene sceneID="4D1-D3-Lhd">
@@ -501,8 +530,97 @@ Cg
             </objects>
             <point key="canvasLocation" x="2778" y="28"/>
         </scene>
+        <!--Present From Left Controller-->
+        <scene sceneID="kXc-Vi-1jk">
+            <objects>
+                <viewController storyboardIdentifier="PresentFromLeftController" id="ZKI-2P-lCJ" customClass="PresentFromLeftController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Myo-Qw-emf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="present进来的，left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztr-5M-g1A">
+                                <rect key="frame" x="111.5" y="120" width="152.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.64890255188435986" blue="0.74588115656773468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ztr-5M-g1A" firstAttribute="top" secondItem="aH3-Bb-0kx" secondAttribute="top" constant="100" id="UkP-uA-f5W"/>
+                            <constraint firstItem="Ztr-5M-g1A" firstAttribute="centerX" secondItem="aH3-Bb-0kx" secondAttribute="centerX" id="oB1-Lc-Aw7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aH3-Bb-0kx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGR-oZ-OCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="761"/>
+        </scene>
+        <!--Present From Right Controller-->
+        <scene sceneID="wOe-it-CNS">
+            <objects>
+                <viewController storyboardIdentifier="PresentFromRightController" id="FQa-mI-SZd" customClass="PresentFromRightController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D07-xz-82P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="present进来的，right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fH-EQ-hZA">
+                                <rect key="frame" x="106" y="120" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8862745098" green="0.26274509800000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8fH-EQ-hZA" firstAttribute="top" secondItem="T50-rT-crv" secondAttribute="top" constant="100" id="9IC-9t-pKM"/>
+                            <constraint firstItem="8fH-EQ-hZA" firstAttribute="centerX" secondItem="T50-rT-crv" secondAttribute="centerX" id="RH1-tU-YyY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T50-rT-crv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj0-ce-4Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="761"/>
+        </scene>
+        <!--Present Autumn Controller-->
+        <scene sceneID="yM1-Q9-fDB">
+            <objects>
+                <viewController storyboardIdentifier="PresentAutumnController" id="uyg-iR-5Lj" customClass="PresentAutumnController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R17-b3-22U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumnbg" translatesAutoresizingMaskIntoConstraints="NO" id="x5R-fr-IzF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正常present进来的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-tr-LeD">
+                                <rect key="frame" x="20" y="70" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82897804683416754" blue="0.26822538171362009" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="x5R-fr-IzF" firstAttribute="bottom" secondItem="fhX-12-eXl" secondAttribute="bottom" id="2XQ-jH-g6w"/>
+                            <constraint firstItem="x5R-fr-IzF" firstAttribute="trailing" secondItem="fhX-12-eXl" secondAttribute="trailing" id="CjD-gi-B6q"/>
+                            <constraint firstItem="x5R-fr-IzF" firstAttribute="top" secondItem="R17-b3-22U" secondAttribute="top" id="MxJ-qz-7QF"/>
+                            <constraint firstItem="dI7-tr-LeD" firstAttribute="leading" secondItem="fhX-12-eXl" secondAttribute="leading" constant="20" id="cep-JN-2e2"/>
+                            <constraint firstItem="dI7-tr-LeD" firstAttribute="top" secondItem="fhX-12-eXl" secondAttribute="top" constant="50" id="yfU-NA-PyW"/>
+                            <constraint firstItem="x5R-fr-IzF" firstAttribute="leading" secondItem="fhX-12-eXl" secondAttribute="leading" id="zFm-tP-eth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fhX-12-eXl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wR-NV-YBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3525.5999999999999" y="760.56971514242889"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="autumnbg" width="1024" height="1389"/>
         <image name="bg" width="800" height="1153"/>
     </resources>
 </document>

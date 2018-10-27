@@ -18,6 +18,10 @@
 		810E68822183397600C33DF8 /* PushFromTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68812183397600C33DF8 /* PushFromTopViewController.swift */; };
 		810E68842183398B00C33DF8 /* PushFromBotomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68832183398B00C33DF8 /* PushFromBotomViewController.swift */; };
 		810E68862183422D00C33DF8 /* PushSpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68852183422D00C33DF8 /* PushSpringViewController.swift */; };
+		810E68B221845A4300C33DF8 /* PresentScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68B121845A4300C33DF8 /* PresentScaleViewController.swift */; };
+		810E68B421845A6200C33DF8 /* PresentFromLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68B321845A6200C33DF8 /* PresentFromLeftController.swift */; };
+		810E68B621845A7700C33DF8 /* PresentFromRightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68B521845A7700C33DF8 /* PresentFromRightController.swift */; };
+		810E68B821845C8000C33DF8 /* PresentAutumnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E68B721845C8000C33DF8 /* PresentAutumnController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		810E68812183397600C33DF8 /* PushFromTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFromTopViewController.swift; sourceTree = "<group>"; };
 		810E68832183398B00C33DF8 /* PushFromBotomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFromBotomViewController.swift; sourceTree = "<group>"; };
 		810E68852183422D00C33DF8 /* PushSpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSpringViewController.swift; sourceTree = "<group>"; };
+		810E68B121845A4300C33DF8 /* PresentScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentScaleViewController.swift; sourceTree = "<group>"; };
+		810E68B321845A6200C33DF8 /* PresentFromLeftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFromLeftController.swift; sourceTree = "<group>"; };
+		810E68B521845A7700C33DF8 /* PresentFromRightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFromRightController.swift; sourceTree = "<group>"; };
+		810E68B721845C8000C33DF8 /* PresentAutumnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAutumnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 				810E68812183397600C33DF8 /* PushFromTopViewController.swift */,
 				810E68852183422D00C33DF8 /* PushSpringViewController.swift */,
 				810E68832183398B00C33DF8 /* PushFromBotomViewController.swift */,
+				810E68B121845A4300C33DF8 /* PresentScaleViewController.swift */,
+				810E68B321845A6200C33DF8 /* PresentFromLeftController.swift */,
+				810E68B521845A7700C33DF8 /* PresentFromRightController.swift */,
+				810E68B721845C8000C33DF8 /* PresentAutumnController.swift */,
 				810E686A2183124500C33DF8 /* Main.storyboard */,
 				810E686D2183124700C33DF8 /* Assets.xcassets */,
 				810E686F2183124700C33DF8 /* LaunchScreen.storyboard */,
@@ -177,14 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810E68B421845A6200C33DF8 /* PresentFromLeftController.swift in Sources */,
 				810E68822183397600C33DF8 /* PushFromTopViewController.swift in Sources */,
 				810E68842183398B00C33DF8 /* PushFromBotomViewController.swift in Sources */,
+				810E68B621845A7700C33DF8 /* PresentFromRightController.swift in Sources */,
 				810E68692183124500C33DF8 /* ViewController.swift in Sources */,
 				810E68862183422D00C33DF8 /* PushSpringViewController.swift in Sources */,
 				810E687C2183149B00C33DF8 /* PushTransition.swift in Sources */,
+				810E68B821845C8000C33DF8 /* PresentAutumnController.swift in Sources */,
 				810E688021831BF500C33DF8 /* PushScaleViewController.swift in Sources */,
 				810E687E218314B000C33DF8 /* PresentTransition.swift in Sources */,
 				810E68672183124500C33DF8 /* AppDelegate.swift in Sources */,
+				810E68B221845A4300C33DF8 /* PresentScaleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

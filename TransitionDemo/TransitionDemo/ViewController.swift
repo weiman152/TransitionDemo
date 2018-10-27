@@ -44,10 +44,16 @@ class ViewController: UIViewController {
     
     @IBAction func presentWithScale(_ sender: Any) {
         
+        let vc = PresentScaleViewController.instance()
+        PresentTransition.presentWithAnimate(fromVC: self, toVC: vc)
     }
     
     @IBAction func presentFromLeft(_ sender: Any) {
-        
+        let vc = PresentFromLeftController.instance()
+        PresentTransition.presentWithAnimate(fromVC: self,
+                                             toVC: vc,
+                                             duration: 1.5,
+                                             animate: .fromLeft)
     }
     
     @IBAction func presentFromRight(_ sender: Any) {
