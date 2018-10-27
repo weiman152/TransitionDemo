@@ -99,7 +99,9 @@ extension PresentTransition {
                             toView: toView,
                             transitionContext: transitionContext)
         case .fromRight:
-            break
+            fromRightPresent(fromView: fromView,
+                             toView: toView,
+                             transitionContext: transitionContext)
         }
         
     }
@@ -124,7 +126,9 @@ extension PresentTransition {
                             toView: toView,
                             transitionContext: transitionContext)
         case .fromRight:
-            break
+            fromRightDismiss(fromView: fromView,
+                             toView: toView,
+                             transitionContext: transitionContext)
         }
     }
     
@@ -181,6 +185,31 @@ extension PresentTransition {
         }) { (_) in
             transitionContext.completeTransition(true)
         }
-        
+    }
+    
+    private func fromRightPresent(fromView: UIView,
+                                  toView: UIView,
+                                  transitionContext: UIViewControllerContextTransitioning)
+    {
+        toView.frame = CGRect(x: ScreenWidth, y: 0, width: ScreenWidth, height: ScreenHeight)
+        UIView.animate(withDuration: PresentTransition.duration, animations: {
+            toView.frame = CGRect(x: 0, y: 0, width: self.ScreenWidth, height: self.ScreenHeight)
+            toView.layoutSubviews()
+        }) { (_) in
+            transitionContext.completeTransition(true)
+        }
+    }
+    
+    private func fromRightDismiss(fromView: UIView,
+                                  toView: UIView,
+                                  transitionContext: UIViewControllerContextTransitioning)
+    {
+        transitionContext.containerView.insertSubview(toView, belowSubview: fromView)
+        UIView.animate(withDuration: PresentTransition.duration, animations: {
+            fromView.transform = CGAffineTransform(translationX: 0, y: self.ScreenHeight)
+            fromView.alpha = 0
+        }) { (_) in
+            transitionContext.completeTransition(true)
+        }
     }
 }

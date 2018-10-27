@@ -21,5 +21,10 @@ class PresentAutumnController: UIViewController {
         let vc = storyBoard.instantiateViewController(withIdentifier: "PresentAutumnController") as! PresentAutumnController
         return vc
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        dismiss(animated: true, completion: {})
+    }
 
 }

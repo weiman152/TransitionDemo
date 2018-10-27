@@ -31,4 +31,11 @@ class PresentFromRightController: UIViewController {
     deinit {
         print("PresentFromRightController释放了")
     }
+    
+    // 测试正常跳转
+    @IBAction func showAutumnVC(_ sender: Any) {
+        let vc = PresentAutumnController.instance()
+        present(vc, animated: true) 
+    }
+    
 }

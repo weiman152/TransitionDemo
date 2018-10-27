@@ -57,7 +57,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentFromRight(_ sender: Any) {
-        
+        let vc = PresentFromRightController.instance()
+        PresentTransition.presentWithAnimate(fromVC: self,
+                                             toVC: vc,
+                                             duration: 1.5,
+                                             animate: .fromRight)
     }
 }
 
